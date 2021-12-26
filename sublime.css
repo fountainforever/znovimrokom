@@ -1,0 +1,37 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	height: 100vh;
+	background-image: url(xmas_Nastya.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.container {
+	width: 60vh;
+	position: absolute;
+	top:  50%;
+	left: 50%;
+	text-align: center;
+	color: azure;
+	font-size: 80px;
+	font-family: 'Waterfall', cursive;
+	margin-left: -15vw;
+	margin-top: -300px;
+	text-shadow: 5px 5px 10px white;
+}
+.wrapper {
+	background-image: url(snowflake1.png),   url(snowflake2.png), url(snowflake3.png); 
+	height: 100%;
+	animation: snow 5s linear infinite;
+}
+@keyframes snow {
+	0% {
+		background-position: 0px 0px, 0px 0px, 0px 0px;
+	}
+	100% {
+		background-position: 500px 1000px, 400px 450px, 300px 300px;
+	}
+}
